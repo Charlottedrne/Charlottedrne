@@ -1,10 +1,250 @@
 ---
- import BaseLayout from '../layout/BasedLayoutAstro.astro'
- const pageTitle = "Page d'accueil";
+import Navigation from "../components/Navigation.astro";
 ---
 
-<BaseLayout pageTitle={pageTitle}>
-	
-</BaseLayout>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
+  <body class="bg-bg">
+    <Navigation />
 
+    <main class="bg-bg font-Fredo font-semibold text-marron">
+      <slot />
+      <img src="/accueil.png" class="w-5/5 block 2xl:hidden" />
+      <img src="/accueil2.png" class="w-5/5 hidden 2xl:block" />
+    </main>
+  </body>
+  <div class="bg-bg px-8 py-12 font-Fredo mx-8 xl:mx-14">
+    <h1
+      class="text-rose text-4xl md:text-6xl xl:text-7xl font-bold mb-4 font-Fredo"
+    >
+      Bonjour !
+    </h1>
+    <p class="text-marron text-lg md:text-xl xl:text-2xl leading-relaxed mb-8">
+      Je m'appelle Charlotte Dourneau, j'ai 20 ans et je suis en 3e année de BUT
+      MMI (Métiers du Multimédia et de l'Internet), parcours Création Numérique.
+      Je suis quelqu’un de dynamique et toujours de bonne humeur. J’adore
+      rencontrer de nouvelles personnes et créer des projets avec elles. Très
+      curieuse, j’aime apprendre sur une grande variété de sujets.
+    </p>
+
+    <!-- les sections -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 space-y-6 mt-28 ">
+      <!-- Compétences -->
+      <div>
+        <h2
+          class="text-rose text-3xl md:text-4xl xl:text-4xl font-bold mb-4 uppercase"
+        >
+          COMPéTENCEs
+        </h2>
+        <ul class="text-marron space-y-2 text-xl md:text-2xl xl:text-3xl">
+          <li>UX et UI Design</li>
+          <li>Graphisme</li>
+          <li>Audiovisuel</li>
+          <li>Développement web</li>
+          <li>Travail d’équipe</li>
+          <li>Langues : Français (maternelle) <br /> Anglais (courant)</li>
+        </ul>
+      </div>
+
+      <!-- Expérience -->
+      <div>
+        <h2
+          class="text-rose text-3xl md:text-4xl xl:text-4xl font-bold mb-4 uppercase"
+        >
+          Expérience
+        </h2>
+        <ul class="text-marron space-y-2 md:space-y-6">
+          <li>
+            <p class="font-medium text-xl md:text-2xl xl:text-3xl">
+              2024 | Stage à connivence
+            </p>
+            <p class="text-lg md:text-xl xl:text-2xl">
+              Prototypage d’une application et d’un site internet, retouche
+              Photoshop
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl md:text-2xl xl:text-3xl">
+              2024 | Contrat saisonnier à Connivence
+            </p>
+            <p class="text-lg md:text-xl xl:text-2xl">
+              Continuité du stage avec des responsabilités en motion design
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <!--Formation -->
+      <div>
+        <h2
+          class="text-bleu text-3xl md:text-4xl xl:text-4xl font-bold mb-4 uppercase"
+        >
+          Formation
+        </h2>
+        <ul class="text-marron space-y-2 md:space-y-6">
+          <li>
+            <p class="font-medium text-xl md:text-2xl xl:text-3xl">
+              IUT du Limousin
+            </p>
+            <p class="text-lg md:text-xl xl:text-2xl">
+              En 3ᵉ année de MMI, parcours Création Numérique
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl md:text-2xl xl:text-3xl">
+              Lycée St Martin Nantes
+            </p>
+            <p class="text-lg md:text-xl xl:text-2xl">
+              Bac général option Mathématiques, Physique-Chimie et HGGSP
+            </p>
+          </li>
+          <li>
+            <p class="font-medium text-xl md:text-2xl xl:text-3xl">
+              Certification d’Histoire de l’Art
+            </p>
+            <p class="text-lg md:text-xl xl:text-2xl">
+              En ligne sur Art Explora Academy
+            </p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Qualités -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-12">
+      <div>
+        <h2
+          class="text-rose text-3xl md:text-4xl xl:text-4xl font-bold mb-4 uppercase"
+        >
+          Qualités
+        </h2>
+        <ul
+          class="text-marron grid grid-cols-2 gap-y-2 text-xl md:text-2xl xl:text-3xl"
+        >
+          <li>Adaptabilité</li>
+          <li>Créativité</li>
+          <li>Empathie</li>
+          <li>Autonomie</li>
+          <li>Positivité</li>
+          <li>Persévérance</li>
+        </ul>
+      </div>
+
+      <!-- Centre d'intérêts -->
+      <div>
+        <h2
+          class="text-bleu text-3xl md:text-3xl xl:text-4xl font-bold mb-4 uppercase"
+        >
+          Centre d’intérêts
+        </h2>
+        <ul class="text-marron flex flex-wrap gap-4 font-medium">
+          <li class="flex items-center flex-col text-center uppercase">
+            <img
+              src="image-basket.png"
+              alt="Basket"
+              class="h-12 mr-2 md:h-16 xl:h-24 font-Fredo"
+            />
+            <p class="text-sm md:text-lg xl:text-xl">BASKET</p>
+          </li>
+          <li class="flex items-center flex-col text-center">
+            <img
+              src="image-art.png"
+              alt="Art"
+              class="h-12 mr-2 md:h-16 xl:h-24 H-"
+            />
+            <p class="text-sm md:text-lg xl:text-xl">ART</p>
+          </li>
+          <li class="flex items-center flex-col text-center">
+            <img
+              src="image-voyage.png "
+              alt="Voyage"
+              class="h-12 mr-2 md:h-16 xl:h-24 H-"
+            />
+            <p class="text-sm md:text-lg xl:text-xl">VOYAGE</p>
+          </li>
+          <li class="flex items-center flex-col text-center">
+            <img
+              src="image-musique.png"
+              alt="Musique"
+              class="h-12 mr-2 md:h-16 xl:h-24 H-"
+            />
+            <p class="text-sm md:text-lg xl:text-xl">MUSIQUE</p>
+          </li>
+          <li class="flex items-center flex-col text-center">
+            <img
+              src="image-musee.png"
+              alt="Musée"
+              class="h-12 mr-2 md:h-16 xl:h-24"
+            />
+            <p class="text-sm md:text-lg xl:text-xl">MUSEE</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section Soft Skills -->
+    <div class="mt-12">
+      <h2
+        class="text-rose text-3xl md:text-4xl xl:text-4xl font-bold mb-4 uppercase"
+      >
+        Soft Skills
+      </h2>
+      <ul class="flex flex-wrap gap-6">
+        <li>
+          <img src="image-figma.png" alt="Figma" class="h-12 md:h-24" />
+        </li>
+        <li>
+          <img
+            src="image-illustrator.png"
+            alt="Illustrator"
+            class="h-12 md:h-24"
+          />
+        </li>
+        <li>
+          <img src="image-photoshop.png" alt="Photoshop" class="h-12 md:h-24" />
+        </li>
+        <li>
+          <img
+            src="image-aftereffects.png"
+            alt="After Effects"
+            class="h-12 md:h-24"
+          />
+        </li>
+        <li>
+          <img src="image-indesign.png" alt="InDesign" class="h-12 md:h-24" />
+        </li>
+        <li>
+          <img
+            src="image-premierepro.png"
+            alt="Premiere Pro"
+            class="h-12 md:h-24"
+          />
+        </li>
+
+        <li>
+          <img src="image-css.png" alt="CSS/HTML" class="h-12 md:h-24" />
+        </li>
+        <li>
+          <img src="image-wordpress.png" alt="WordPress" class="h-12 md:h-24" />
+        </li>
+
+        <li>
+          <img src="image-blender.png" alt="Blender" class="h-12 md:h-24" />
+        </li>
+      </ul>
+    </div>
+  </div>
+</html>
