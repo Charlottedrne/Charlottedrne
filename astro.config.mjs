@@ -8,6 +8,6 @@ import tailwind from '@astrojs/tailwind';
 
 // https://astro.build/config
 export default defineConfig({
-    site: 'https://Charlottedrne.github.io',
+    site: 'https://charlottedrne.github.io',
     integrations: [mdx(), sitemap(), tailwind()],
 });
