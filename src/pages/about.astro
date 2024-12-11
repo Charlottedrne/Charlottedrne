@@ -38,73 +38,70 @@ import motion from "./motion.astro";
       <div
         class="flex justify-between items-center px-3 py-3 md:px-8 md:py-4 pb-10"
       >
-        <a href="/">ACCUEIL</a>
+        <a class="hover:text-bleu" href="/">ACCUEIL</a>
         <div class="flex items-center space-x-2 md:space-x-4">
-          <a href="/about">MES PROJECTS</a>
+          <a class="hover:text-jaune" href="/about">MES PROJECTS</a>
           <img src="/etoileB.webp" class="md:w-10 w-6" />
-          <a href="/contact">CONTACT</a>
+          <a class="hover:text-rose" href="/contact">CONTACT</a>
         </div>
       </div>
     </nav>
-    <img src="/projet.webp" class="w-5/5 block 2xl:hidden" />
-      <img src="/projets2.webp" class="w-5/5 hidden 2xl:block" />
-    <div class="container mx-auto p-6 space-y-16">
+    <img src="/projet.webp" class="w-5/5 block md:hidden" />
+    <img src="/projets2.webp" class="w-5/5 hidden md:block xl:w-4/5 mx-auto" />
+    <div class="container mx-auto p-6 gap-10 grid xl:grid-cols-2 ">
       <!-- Motion Design Section -->
       <section>
-        <a href="motion" >Projet1</a>
-        <div class="place-content-between flex">
-          <h1 class="text-4xl text-rose uppercase font-Fredo  font-semibold">Motion design</h1>
-          <p class="text-jaune text-2xl font-Fredo  font-semibold">2024</p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div class="space-y-4 text-xs md:text-sm 2xl:text-lg">
-            <p class="">
-              Pour ce projet, nous avons décidé de reprendre des illustrations que nous avions déjà réalisées et de les adapter en un motion design d’une durée de 15 à 30 secondes environ.
-            </p>
-            <p class="">
-              J’ai choisi de réutiliser mes illustrations créées pour la Fédération HIERO, une organisation qui programme des concerts. Pour le style graphique, j’ai souhaité développer un univers inspiré du genre horrifique.            </p>
-            <p class="">
-              Pour renforcer cette ambiance, j’ai ajouté une musique de fond aux tonalités angoissantes. J’ai également voulu structurer mon motion design autour d’un unique plan, en m’inspirant du film La Corde d’Alfred Hitchcock, qui donne l’illusion d’être tourné en une seule prise.            </p>
-          </div>
-          <div class="flex gap-4">
-            <img src="motion1.webp" alt="Illustration HIERO 1" class="w-1/2 h-auto ">
-            <img src="motion2.webp" alt="Illustration HIERO 2" class="w-1/2 h-auto ">
-          </div>
+        
+        <div class="place-content-between flex ">
+          <img
+              src="motion1.webp"
+              alt="Illustration HIERO 1"
+              class="w-auto h-80 xl:h-96"
+            />
+          <div class=" flex flex-col pl-10">
+            <h1 class="text-4xl text-rose uppercase font-Fredo font-semibold">
+              Motion design
+            </h1>
+            <p class="text-jaune text-2xl font-Fredo font-semibold">2024</p>
+                <p class="text-xs md:text-sm 2xl:text-lg">
+                Pour ce projet scolaire, nous avons décidé de reprendre des
+                illustrations que nous avions déjà réalisées et de les adapter
+                en un motion design d’une durée de 15 à 30 secondes environ.
+                </p>
+              <img src="pro-aftereffects.webp" class="w-12 md:w-14 xl:w-20 pt-3" />
+              <a href="motion" class="text-2xl font-Fredo font-semibold text-marron pt-10 hover:text-rose">EN SAVOIR PLUS</a>
+            </div>
         </div>
       </section>
-      <div>
-        <img src="">
-      </div>
-  
+
+
       <!-- Affiche HIERO Section -->
       <section>
-        <div class="place-content-between flex">
-          <h1 class="text-4xl text-rose font-Fredo  font-semibold">AFFICHE HIERO</h1>
-          <p class="text-jaune text-2xl font-Fredo font-semibold">2024</p>
-        </div>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
-          <div class="space-y-4  text-xs md:text-sm 2xl:text-lg">
-            <p class="">
-              Pour ce projet, nous avons créé quatre illustrations pour une fédération qui organise des concerts à Limoges. Cette fédération possède un style graphique très distinctif.
-            </p>
-            <p class="">
-              Pour réaliser nos illustrations, nous avons utilisé Photoshop. Cela m’a permis d’apprendre à créer des pinceaux personnalisés et à utiliser cet outil pour le dessin, une technique que je n’avais encore jamais explorée.
-            </p>
-            <p class="">
-              De plus, au fil des illustrations, nous devions progressivement nous détacher du style graphique de la fédération HIERO. J’ai opté pour un style avec du grain et des personnages sans visage, afin de créer un univers empreint d’une atmosphère horrifique.
-            </p>
-          </div>
-          <div class="grid grid-cols-2 gap-4">
-            <img src="herio2.webp" alt="Illustration HIERO 1" >
-            <img src="herio3.webp" alt="Illustration HIERO 2" >
-            
-          </div>
+        
+        <div class="place-content-between flex ">
+          <img
+              src="motion2.webp"
+              alt="Illustration HIERO 1"
+              class="w-auto h-80 xl:h-96"
+            />
+          <div class=" flex flex-col pl-10">
+            <h1 class="text-4xl text-rose uppercase font-Fredo font-semibold">
+              Affiche hiero
+            </h1>
+            <p class="text-jaune text-2xl font-Fredo font-semibold">2024</p>
+                <p class="text-xs md:text-sm 2xl:text-lg">
+                  Pour ce projet scolaire, nous avons créé quatre illustrations pour une fédération qui organise des concerts à Limoges. Cette fédération possède un style graphique très distinctif.
+                </p>
+              <img src="pro-photoshop.webp" class="w-12 md:w-14 xl:w-20 pt-3" />
+              <a href="motion" class="text-2xl font-Fredo font-semibold text-marron pt-10 hover:text-rose">EN SAVOIR PLUS</a>
+            </div>
         </div>
       </section>
     </div>
-  </body>
-  </html>
-
-    <h1></h1>
+    <div>
+      <img src="/footer.webp" alt="footer" class=" mt-16 mb-12 xl:w-3/5 mx-auto md:w-4/5">
+    </div>
   </body>
 </html>
+
+<h1></h1>

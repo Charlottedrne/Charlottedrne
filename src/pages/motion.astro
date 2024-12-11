@@ -21,11 +21,34 @@ import Navigation from "../components/Navigation.astro";
     <Navigation />
     <main class="bg-bg font-Fredo font-semibold text-marron">
         <slot />
-        <img src="/projet.webp" class="w-5/5 block 2xl:hidden" />
-      <img src="/projets2.webp" class="w-5/5 hidden 2xl:block" />
+        <img src="/monprojet.webp" class="w-5/5 block md:hidden" />
+        <img src="/monprojet2.webp" class="w-5/5 hidden md:block xl:w-4/5 mx-auto" />
       </main>
     </body>
-    <div>fhue</div>
+    <section class="mx-10 mb-28">
+      <div class="place-content-between flex">
+        <h1 class="text-4xl text-rose uppercase font-Fredo  font-semibold">Motion design</h1>
+        <p class="text-jaune text-2xl font-Fredo  font-semibold">2024</p>
+      </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+        <div class="space-y-2 text-sm md:text-lg 2xl:text-xl">
+          <p class="">
+            Pour ce projet, nous avons décidé de reprendre des illustrations que nous avions déjà réalisées et de les adapter en un motion design d’une durée de 15 à 30 secondes environ.
+          </p>
+          <p class="">
+            J’ai choisi de réutiliser mes illustrations créées pour la Fédération HIERO, une organisation qui programme des concerts. Pour le style graphique, j’ai souhaité développer un univers inspiré du genre horrifique.            </p>
+          <p class="">
+            Pour renforcer cette ambiance, j’ai ajouté une musique de fond aux tonalités angoissantes. J’ai également voulu structurer mon motion design autour d’un unique plan, en m’inspirant du film La Corde d’Alfred Hitchcock, qui donne l’illusion d’être tourné en une seule prise.            </p>
+            <img src="pro-aftereffects.webp" class="w-16  xl:w-20 pt-3">
+        </div>
+        <div class="flex gap-4">
+          <img src="motion1.webp" alt="Illustration HIERO 1" class=" w-1/2 h-auto mx-auto  ">
+        </div>
+      </div>
+    </section>
+    <div>
+      <img src="/footer.webp" alt="footer" class=" mt-16 mb-12 xl:w-3/5 mx-auto md:w-4/5">
+    </div>
     
   </html>
   

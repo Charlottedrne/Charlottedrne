@@ -30,21 +30,18 @@ const skills = [
     />
   </head>
   <body class="bg-bg">
-    <nav
-      class="bg-bg text-marron font-Fredo font-semibold text-base md:text-3xl"
-    >
-      <div
-        class="flex justify-between items-center px-3 py-3 md:px-8 md:py-4 pb-10"
-      >
-        <a href="/">ACCUEIL</a>
+    <nav class=" bg-bg text-marron font-Fredo  font-semibold text-base md:text-3xl" >
+      <div class=" flex justify-between items-center px-3 py-3 md:px-8 md:py-4 pb-10">
+        <a class="hover:text-bleu" href="/">ACCUEIL</a>
         <div class="flex items-center space-x-2 md:space-x-4">
-          <a href="/about">MES PROJECTS</a>
-          <img src="/etoileB.webp" class="md:w-10 w-6" />
-          <a href="/contact">CONTACT</a>
+          <a class="hover:text-jaune" href="/about">MES PROJECTS</a>
+          <img src="/etoileB.webp" class="md:w-10 w-6">
+          <a class="hover:text-rose" href="/contact">CONTACT</a>
         </div>
       </div>
     </nav>
-    <img src="/contact.webp" />
+    <img src="/contact.webp" class="w-5/5 block md:hidden" />
+      <img src="/contact2.webp" class="w-5/5 hidden md:block xl:w-4/5 mx-auto" />
 
     <ul class=" space-y-6  my-8 mx-12">
       <li>
@@ -60,7 +57,10 @@ const skills = [
         <p class="text-marron font-normal text-sm dm:text-xl xl:text-2xl">https://www.behance.net/charlotdourne</p> 
       </li>
     </ul>
-    <a class="text-3xl" href="/post-2.md">CONTACT</a>
+
+    <div>
+      <img src="/footer.webp" alt="footer" class=" mt-16 mb-12 xl:w-3/5 mx-auto md:w-4/5">
+    </div>
 
 
   </body>

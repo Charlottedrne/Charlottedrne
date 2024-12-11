@@ -22,8 +22,8 @@ import Navigation from "../components/Navigation.astro";
 
     <main class="bg-bg font-Fredo font-semibold text-marron">
       <slot />
-      <img src="/accueil.webp" class="w-5/5 block 2xl:hidden" />
-      <img src="/accueil2.webp" class="w-5/5 hidden 2xl:block" />
+      <img src="/accueil.webp" class="w-5/5 block md:hidden" />
+      <img src="/accueil2.webp" class="w-5/5 hidden md:block xl:w-4/5 mx-auto" />
     </main>
   </body>
   <div class="bg-bg px-8 py-12 font-Fredo mx-8 xl:mx-14">
@@ -247,4 +247,8 @@ import Navigation from "../components/Navigation.astro";
       </ul>
     </div>
   </div>
+  <div>
+    <img src="/footer.webp" alt="footer" class=" mt-16 mb-12 xl:w-3/5 mx-auto md:w-4/5">
+  </div>
+  
 </html>
